@@ -23,13 +23,14 @@ public class SpringBootDataApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         // save a couple of customers
-        customerRepository.save(new Customer("Jack", "Bauer"));
-        customerRepository.save(new Customer("Chloe", "O'Brian"));
-        customerRepository.save(new Customer("Kim", "Bauer"));
-        customerRepository.save(new Customer("David", "Palmer"));
-        customerRepository.save(new Customer("Michelle", "Dessler"));
+        customerRepository.save(new Customer("Farshad", "Mirzaei 2"));
+        customerRepository.save(new Customer("Reza", "Mirzaei 2"));
+        customerRepository.save(new Customer("Rasoul", "Mirzaei 3"));
+        customerRepository.save(new Customer("Sadjad", "Mirzaei 3"));
+        customerRepository.save(new Customer("Mehrdad", "Mirzaei 3"));
 
         // fetch all customers
+        log.info("");
         log.info("Customers found with findAll():");
         for (Customer customer : customerRepository.findAll()) {
             log.info(customer.toString());
@@ -44,9 +45,9 @@ public class SpringBootDataApplication implements CommandLineRunner {
                 });
 
         // fetch customers by last name
-        log.info("Customer found with findByLastName('Bauer'):");
-        customerRepository.findByLastName("Bauer").forEach(bauer -> {
-            log.info(bauer.toString());
+        log.info("Customer found with findByLastName('Mirzaei 2'):");
+        customerRepository.findByLastName("Mirzaei 2").forEach(mirzaeiCustomer -> {
+            log.info(mirzaeiCustomer.toString());
         });
         log.info("");
     }
