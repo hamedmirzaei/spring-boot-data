@@ -3,9 +3,9 @@
 This is a simple example to show you how Spring Data works with Spring Boot.
 
 # Libraries and Tools
-* [Module] `Spring Boot`
+* [Module] [`Spring Boot`](https://spring.io/projects/spring-boot)
 * [Module] `Spring Data`
-* [Library for auto-generating getters, setters, constructors, slf4j and others] `Lombok`
+* [Library for auto-generating getters, setters, constructors, slf4j and others] [`Lombok`](https://projectlombok.org/)
 * [Database] `H2`
 
 # How it works
