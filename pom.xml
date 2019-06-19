@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>spring.boot.data</groupId>
-    <artifactId>spring_boot_data</artifactId>
+    <artifactId>spring-boot-data</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring_boot_data</name>
+    <name>spring-boot-data</name>
     <description>Demo project for Spring Boot + Spring Data</description>
 
     <properties>
